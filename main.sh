@@ -1,1 +1,3 @@
-echo "main file"
+#!/bin/bash
+
+echo "Main executor"
