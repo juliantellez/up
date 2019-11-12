@@ -4,11 +4,15 @@
 
 #
 # print "foo" ${tput_color_red}
+# - tput setaf: Set foreground color
+# - tput sgr0: Turn off all attributes
+# see http://linuxcommand.org/lc3_adv_tput.php#text-effects
 #
 print() {
  printf "%b" \
         "$(tput setaf "$2")" \
-        "$1"
+        "$1" \
+        "$(tput sgr0 2> /dev/null)"
 }
 
 print_success() {
