@@ -16,4 +16,3 @@ fi;
 if [[ $START =~ ^[Yy]$ ]]; then
     sh $(pwd)/main.sh
 fi;
-
