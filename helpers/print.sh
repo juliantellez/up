@@ -28,5 +28,9 @@ print_error() {
 }
 
 print_question() {
-    print "  [?] $1" ${tput_color_yellow}
+    print "  [?] $1" ${tput_color_cyan}
+}
+
+print_info() {
+    print "  [info] $1" ${tput_color_cyan}
 }

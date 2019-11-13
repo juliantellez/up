@@ -25,7 +25,7 @@ install_cask() {
     if [[ ! $(brew cask list | grep $cask) ]]; then
         print "Installing $cask" ${tput_color_yellow}
         brew cask install $cask --appdir=/Applications >/dev/null
-        print_success "${bold} ✓ installed! ${normal}"
+        print_success "${bold} ✓ installed. ${normal}"
     else
         print_success "$cask already installed."
     fi
@@ -47,7 +47,7 @@ install_brew() {
     if [[ ! $(brew list | grep $brew) ]]; then
         print "Installing $brew" ${tput_color_yellow}
         brew install $brew >/dev/null
-        print_success "${font_bold} ✓ installed! ${font_normal}"
+        print_success "${font_bold} ✓ installed. ${font_normal}"
     else
         print_success "$brew already installed."
     fi

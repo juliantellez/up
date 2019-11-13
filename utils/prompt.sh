@@ -22,4 +22,4 @@ if [[ $ADMIN_ACCESS =~ ^[Yy]$ ]]; then
     exit 0
 fi;
 
-sh $(pwd)/main.sh
+time sh $(pwd)/main.sh
