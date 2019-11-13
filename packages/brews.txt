@@ -1,6 +1,5 @@
 awscli
 docker
-fzf
 git
 go
 jq

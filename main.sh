@@ -1,6 +1,7 @@
 #!/bin/bash
 
 . $(pwd)/dependencies/brew.sh
+. $(pwd)/dependencies/fzf.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
 . $(pwd)/dependencies/powerlevel9k.sh
@@ -30,6 +31,9 @@ install_brew_packages "cask" $(pwd)/packages/casks.txt
 
 step "Tap: Casks"
 install_brew_packages "tap" $(pwd)/packages/taps.txt
+
+step "Install: FZF fuzzy search"
+install_fzf
 
 step "Install: Nodejs"
 install_nodejs
