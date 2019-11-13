@@ -1,0 +1,9 @@
+canary
+firefox
+google-chrome
+iterm2
+ngrok
+spotify
+vagrant
+visual-studio-code
+virtualbox

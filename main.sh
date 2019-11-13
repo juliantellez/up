@@ -17,11 +17,14 @@ setup_ssh_key
 step "Setup: XCode"
 install_xcode
 
-step "Setup: Brew"
-install_brew
+step "Setup: HomeBrew"
+install_home_brew
 
-step "Setup: Install Brew packages"
-install_brew_packages
+step "Setup: Install Brews"
+install_brews $(pwd)/packages/brews.txt
+
+step "Setup: Install Casks"
+install_casks $(pwd)/packages/casks.txt
 
 step "Setup: Zsh"
 install_zsh
