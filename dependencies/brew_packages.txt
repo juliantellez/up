@@ -7,6 +7,7 @@ jq
 htop
 hub
 kops
+npm
 python3
 terraform
 the_silver_searcher
