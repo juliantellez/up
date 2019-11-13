@@ -1,7 +1,11 @@
 #!/bin/bash
 
-. $(pwd)/helpers/step.sh
 . $(pwd)/helpers/test_internet_connection.sh
+. $(pwd)/helpers/setup_ssh_key.sh
+. $(pwd)/helpers/step.sh
 
-step "Check: internet connection"
+step "Check: Internet connection"
 test_internet_connection
+
+step "Setup: SSH key"
+setup_ssh_key
