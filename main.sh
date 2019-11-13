@@ -2,6 +2,7 @@
 
 . $(pwd)/dependencies/brew.sh
 . $(pwd)/dependencies/nodejs.sh
+. $(pwd)/dependencies/powerlevel9k.sh
 . $(pwd)/dependencies/xcode.sh
 . $(pwd)/dependencies/zsh.sh
 . $(pwd)/helpers/test_internet_connection.sh
@@ -17,17 +18,23 @@ setup_ssh_key
 step "Setup: XCode"
 install_xcode
 
-step "Setup: HomeBrew"
+step "Install: HomeBrew"
 install_home_brew
 
-step "Setup: Install Brews"
+step "Install: Brews"
 install_brews $(pwd)/packages/brews.txt
 
-step "Setup: Install Casks"
+step "Install: Casks"
 install_casks $(pwd)/packages/casks.txt
 
-step "Setup: Nodejs"
+step "Install: Nodejs"
 install_nodejs
 
-step "Setup: Oh My Zsh"
+step "Install: Oh My Zsh"
 install_zsh
+
+step "Install: Powerlevel9k"
+install_powerlevel9k
+
+step "Install: Powerlevel9k"
+install_powerline_fonts "HackNerdFontComplete-Regular 12" "Monaco 12"
