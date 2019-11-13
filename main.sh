@@ -37,4 +37,4 @@ step "Install: Powerlevel9k"
 install_powerlevel9k
 
 step "Install: Powerlevel9k"
-install_powerline_fonts "HackNerdFontComplete-Regular 12" "Monaco 12"
+install_powerline_fonts "HackNerdFontComplete-Regular" "Monaco"
