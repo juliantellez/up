@@ -1,9 +1,12 @@
+caffeine
 canary
 firefox
 google-chrome
 iterm2
 ngrok
+spectacle
 spotify
+trailer
 vagrant
 visual-studio-code
 font-hack-nerd-font
