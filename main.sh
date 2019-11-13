@@ -44,9 +44,9 @@ step "Config: Create Iterm2 configuration"
 create_iterm2_configuration $(pwd)/config/iterm.json
 
 step "Config: Fetch iterm2 color presets"
-fetch_zsh_color_preset Ciapre.itermcolors
-fetch_zsh_color_preset FrontEndDelight.itermcolors
-fetch_zsh_color_preset BirdsOfParadise.itermcolors
+fetch_iterm2_color_preset Ciapre.itermcolors
+fetch_iterm2_color_preset FrontEndDelight.itermcolors
+fetch_iterm2_color_preset BirdsOfParadise.itermcolors
 
 step "Config: Copy zshrc"
 copy_zsh_configuration $(pwd)/config/.zshrc
