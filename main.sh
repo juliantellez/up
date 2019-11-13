@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. $(pwd)/dependencies/brew.sh
 . $(pwd)/dependencies/xcode.sh
 . $(pwd)/dependencies/zsh.sh
 . $(pwd)/helpers/test_internet_connection.sh
@@ -15,5 +16,11 @@ setup_ssh_key
 step "Setup: XCode"
 install_xcode
 
-step: "Setup: zsh"
+step "Setup: Brew"
+install_brew
+
+step "Setup: Install Brew packages"
+install_brew_packages
+
+step "Setup: zsh"
 install_zsh

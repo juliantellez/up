@@ -1,0 +1,15 @@
+awscli
+docker
+fzf
+git
+go
+jq
+htop
+hub
+kops
+python3
+terraform
+the_silver_searcher
+vim
+wget
+z
