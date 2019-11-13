@@ -1,6 +1,7 @@
 #!/bin/bash
 
 . $(pwd)/dependencies/brew.sh
+. $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
 . $(pwd)/dependencies/powerlevel9k.sh
 . $(pwd)/dependencies/xcode.sh
@@ -39,8 +40,8 @@ install_zsh
 step "Install: Powerlevel9k"
 install_powerlevel9k
 
-step "Install: Powerline Fonts"
-install_powerline_fonts "HackNerdFontComplete-Regular" "Monaco"
+step "Config: Create Iterm2 configuration"
+create_iterm2_configuration $(pwd)/config/iterm.json
 
 step "Config: Copy zshrc"
 copy_zsh_configuration $(pwd)/config/.zshrc

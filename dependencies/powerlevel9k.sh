@@ -16,10 +16,3 @@ install_powerlevel9k () {
         print_success "PowerLevel9k already installed."
     fi
 }
-
-install_powerline_fonts () {
-    defaults write com.googlecode.iterm2 "Normal Font" -string $1
-    defaults write com.googlecode.iterm2 "Non Ascii Font" -string $2
-
-    print_success "Powerline fonts installed"
-}
