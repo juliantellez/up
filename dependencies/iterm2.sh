@@ -1,5 +1,6 @@
-. $(pwd)/helpers/ask.sh
+#!/bin/bash
 
+. $(pwd)/helpers/ask.sh
 . $(pwd)/helpers/print.sh
 
 create_iterm2_configuration() {
