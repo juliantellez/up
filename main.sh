@@ -1,6 +1,7 @@
 #!/bin/bash
 
 . $(pwd)/dependencies/xcode.sh
+. $(pwd)/dependencies/zsh.sh
 . $(pwd)/helpers/test_internet_connection.sh
 . $(pwd)/helpers/setup_ssh_key.sh
 . $(pwd)/helpers/step.sh
@@ -13,3 +14,6 @@ setup_ssh_key
 
 step "Setup: XCode"
 install_xcode
+
+step: "Setup: zsh"
+install_zsh
