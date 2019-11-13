@@ -29,5 +29,5 @@ install_casks $(pwd)/packages/casks.txt
 step "Setup: Nodejs"
 install_nodejs
 
-step "Setup: Zsh"
+step "Setup: Oh My Zsh"
 install_zsh
