@@ -11,22 +11,22 @@
 print() {
  printf "%b" \
         "$(tput setaf "$2")" \
-        "$1" \
+        "$1\n" \
         "$(tput sgr0 2> /dev/null)"
 }
 
 print_success() {
-    print "  [✓] $1\n" ${tput_color_green}
+    print "  [✓] $1" ${tput_color_green}
 }
 
 print_warning() {
-    print "  [!] $1\n" ${tput_color_yellow}
+    print "  [!] $1" ${tput_color_yellow}
 }
 
 print_error() {
-    print "  [𝘅] $1 $2\n" ${tput_color_red}
+    print "  [𝘅] $1 $2" ${tput_color_red}
 }
 
 print_question() {
-    print "  [?] $1\n" ${tput_color_yellow}
+    print "  [?] $1" ${tput_color_yellow}
 }

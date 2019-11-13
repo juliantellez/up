@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. $(pwd)/helpers/print.sh
+
 ask() {
     # https://djm.me/ask
     local prompt default reply
@@ -18,7 +20,7 @@ ask() {
         fi
 
         # Ask the question (not using "read -p" as it uses stderr not stdout)
-        echo -n "  [?] $1 [$prompt] "
+        print_question "$1 [$prompt]"
 
         # Read the answer (use /dev/tty in case stdin is redirected from somewhere else)
         read reply </dev/tty

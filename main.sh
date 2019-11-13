@@ -26,8 +26,8 @@ install_brews $(pwd)/packages/brews.txt
 step "Setup: Install Casks"
 install_casks $(pwd)/packages/casks.txt
 
-step "Setup: Zsh"
-install_zsh
-
 step "Setup: Nodejs"
 install_nodejs
+
+step "Setup: Zsh"
+install_zsh

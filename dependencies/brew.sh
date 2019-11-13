@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. $(pwd)/helpers/ask.sh
 . $(pwd)/helpers/print.sh
 . $(pwd)/utils/styles.sh
 
@@ -22,9 +23,15 @@ install_home_brew() {
 
 install_cask() {
     if [[ ! $(brew cask list | grep $cask) ]]; then
-        print "Installing $cask" ${tput_color_yellow}
-        brew cask install $cask --appdir=/Applications >/dev/null
-        print_success "${bold} ✓ installed! ${normal}\n"
+
+        if ask "Would you like to install ${cask}?" Y; then
+            print "Installing $cask" ${tput_color_yellow}
+            brew cask install $cask --appdir=/Applications >/dev/null
+            print_success "${bold} ✓ installed! ${normal}"
+        else
+            print_warning "Skipping ${cask} installation"
+        fi
+
     else
         print_success "$cask already installed."
     fi
@@ -33,7 +40,7 @@ install_cask() {
 install_casks() {
     if [ -e $1 ]; then
         for cask in $(<$1); do
-            print "Installing ${cask} \n" ${tput_color_yellow}
+            print "Installing ${cask}" ${tput_color_yellow}
             install_cask $cask
         done
 
@@ -44,9 +51,14 @@ install_casks() {
 
 install_brew() {
     if [[ ! $(brew list | grep $brew) ]]; then
-        print "Installing $brew" ${tput_color_yellow}
-        brew install $brew >/dev/null
-        print_success "${font_bold} ✓ installed! ${font_normal} \n"
+
+        if ask "Would you like to install ${brew}?" Y; then
+            print "Installing $brew" ${tput_color_yellow}
+            brew install $brew >/dev/null
+            print_success "${font_bold} ✓ installed! ${font_normal}"
+        else
+            print_warning "Skipping ${brew} installation"
+        fi
     else
         print_success "$brew already installed."
     fi
@@ -55,7 +67,7 @@ install_brew() {
 install_brews() {
     if [ -e $1 ]; then
         for brew in $(<$1); do
-            print "Installing ${brew} \n" ${tput_color_yellow}
+            print "Installing ${brew}" ${tput_color_yellow}
             install_brew $brew
         done
 
