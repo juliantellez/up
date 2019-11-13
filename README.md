@@ -10,6 +10,10 @@ sh bootstrap.sh
 
 # About
 
+# Color Presets
+
+- https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/README.md
+
 # FAQ
 
 - Have you tested these dotfiles?

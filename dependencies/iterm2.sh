@@ -11,3 +11,9 @@ create_iterm2_configuration() {
         print_error "Aborting..."
     fi
 }
+
+fetch_iterm2_color_preset() {
+    local dir=color_presets
+    sudo mkdir -p $(pwd)/$dir
+    sudo wget https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/$1 -O $(pwd)/$dir/$1
+}
