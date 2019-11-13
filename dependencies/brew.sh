@@ -23,15 +23,9 @@ install_home_brew() {
 
 install_cask() {
     if [[ ! $(brew cask list | grep $cask) ]]; then
-
-        if ask "Would you like to install ${cask}?" Y; then
-            print "Installing $cask" ${tput_color_yellow}
-            brew cask install $cask --appdir=/Applications >/dev/null
-            print_success "${bold} ✓ installed! ${normal}"
-        else
-            print_warning "Skipping ${cask} installation"
-        fi
-
+        print "Installing $cask" ${tput_color_yellow}
+        brew cask install $cask --appdir=/Applications >/dev/null
+        print_success "${bold} ✓ installed! ${normal}"
     else
         print_success "$cask already installed."
     fi
@@ -51,14 +45,9 @@ install_casks() {
 
 install_brew() {
     if [[ ! $(brew list | grep $brew) ]]; then
-
-        if ask "Would you like to install ${brew}?" Y; then
-            print "Installing $brew" ${tput_color_yellow}
-            brew install $brew >/dev/null
-            print_success "${font_bold} ✓ installed! ${font_normal}"
-        else
-            print_warning "Skipping ${brew} installation"
-        fi
+        print "Installing $brew" ${tput_color_yellow}
+        brew install $brew >/dev/null
+        print_success "${font_bold} ✓ installed! ${font_normal}"
     else
         print_success "$brew already installed."
     fi
