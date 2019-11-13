@@ -1,6 +1,7 @@
 #!/bin/bash
 
 . $(pwd)/dependencies/brew.sh
+. $(pwd)/dependencies/nodejs.sh
 . $(pwd)/dependencies/xcode.sh
 . $(pwd)/dependencies/zsh.sh
 . $(pwd)/helpers/test_internet_connection.sh
@@ -22,5 +23,8 @@ install_brew
 step "Setup: Install Brew packages"
 install_brew_packages
 
-step "Setup: zsh"
+step "Setup: Zsh"
 install_zsh
+
+step "Setup: Nodejs"
+install_nodejs
