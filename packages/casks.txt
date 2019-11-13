@@ -6,3 +6,4 @@ ngrok
 spotify
 vagrant
 visual-studio-code
+font-hack-nerd-font

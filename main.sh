@@ -22,10 +22,13 @@ step "Install: HomeBrew"
 install_home_brew
 
 step "Install: Brews"
-install_brews $(pwd)/packages/brews.txt
+install_brew_packages "brew" $(pwd)/packages/brews.txt
 
 step "Install: Casks"
-install_casks $(pwd)/packages/casks.txt
+install_brew_packages "cask" $(pwd)/packages/casks.txt
+
+step "Tap: Casks"
+install_brew_packages "tap" $(pwd)/packages/taps.txt
 
 step "Install: Nodejs"
 install_nodejs
@@ -39,5 +42,5 @@ install_powerlevel9k
 step "Install: Powerline Fonts"
 install_powerline_fonts "HackNerdFontComplete-Regular" "Monaco"
 
-step: "Config: Copy zshrc"
+step "Config: Copy zshrc"
 copy_zsh_configuration $(pwd)/config/.zshrc

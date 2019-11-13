@@ -16,8 +16,11 @@ install_zsh () {
 
 copy_zsh_configuration () {
     if ask "Would you like to copy this zshrc config? ${1}" Y; then
-        print_info "Creating a backup in ${HOME}/.zshrc.bp"
-        cp $HOME/.zshrc $HOME/.zshrc.bp
+        local timestamp=$(date +%s)
+        local backup_file="${HOME}/.zshrc.${timestamp}.bp"
+
+        print_info "Creating a backup in ${backup_file}"
+        cp $HOME/.zshrc $backup_file
 
         cp $1 $HOME/.zshrc
         print_success "Zshrc config updated"

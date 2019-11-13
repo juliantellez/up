@@ -18,9 +18,6 @@ install_powerlevel9k () {
 }
 
 install_powerline_fonts () {
-    brew tap homebrew/cask-fonts
-    brew cask install font-hack-nerd-font
-
     defaults write com.googlecode.iterm2 "Normal Font" -string $1
     defaults write com.googlecode.iterm2 "Non Ascii Font" -string $2
 

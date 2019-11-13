@@ -32,5 +32,5 @@ print_question() {
 }
 
 print_info() {
-    print "  [info] $1" ${tput_color_cyan}
+    print "  $1" ${tput_color_yellow}
 }

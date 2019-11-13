@@ -21,46 +21,49 @@ install_home_brew() {
     fi
 }
 
-install_cask() {
-    if [[ ! $(brew cask list | grep $cask) ]]; then
-        print "Installing $cask" ${tput_color_yellow}
-        brew cask install $cask --appdir=/Applications >/dev/null
-        print_success "${bold} ✓ installed. ${normal}"
-    else
-        print_success "$cask already installed."
-    fi
-}
-
-install_casks() {
-    if [ -e $1 ]; then
-        for cask in $(<$1); do
-            print "Installing ${cask}" ${tput_color_yellow}
-            install_cask $cask
-        done
-
-        else
-        print_error "Brews file not found"
-    fi
-}
-
 install_brew() {
-    if [[ ! $(brew list | grep $brew) ]]; then
-        print "Installing $brew" ${tput_color_yellow}
-        brew install $brew >/dev/null
+    if [[ ! $(brew list | grep $1) ]]; then
+        print_info "Installing $1"
+        brew install $1 >/dev/null
         print_success "${font_bold} ✓ installed. ${font_normal}"
     else
-        print_success "$brew already installed."
+        print_success "$1 already installed."
     fi
 }
 
-install_brews() {
-    if [ -e $1 ]; then
-        for brew in $(<$1); do
-            print "Installing ${brew}" ${tput_color_yellow}
-            install_brew $brew
+install_cask() {
+    if [[ ! $(brew cask list | grep $1) ]]; then
+        print_info "Installing $1"
+        brew cask install $1 --appdir=/Applications >/dev/null
+        print_success "${bold} ✓ installed. ${normal}"
+    else
+        print_success "$1 already installed."
+    fi
+}
+
+tap_cask() {
+    if [[ ! $(brew cask list | grep $1) ]]; then
+        print_info "Tapping cask $1"
+        brew tap $1 >/dev/null
+        print_success "${bold} ✓ tapped. ${normal}"
+    else
+        print_success "$1 already tapped."
+    fi
+}
+
+install_brew_packages(){
+    if [ -e $2 ]; then
+        for package in $(<$2); do
+            print_info "Installing ${package}"
+
+            case $1 in
+            ("brew") install_brew $package;;
+        ("cask") install_cask $package;;
+    ("tap") tap_cask $package;;
+    esac
         done
 
-        else
-        print_error "Brews file not found"
+    else
+        print_error "Pagackes file not found"
     fi
 }
