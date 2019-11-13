@@ -1,10 +1,20 @@
-# UP
+<h1 align="center">UP</h1>
 
-Start up your OSX machine with one command
+<p align="center">
+  <a href="https://github.com/juliantellez/lambcycle" target="_blank">
+    <img alt="lambcycle" src="./assets/up.png" width="144">
+  </a>
+</p>
+
+<p align="center">
+UP is a declarative dotfile configuration. its main goal is to increase your productivity whilst keeping track of your machine dependencies. Get UP and running in no time, start up your machine with one command!
+</p>
 
 - [Install](#install)
 - [Brews](#brews)
 - [Casks](#casks)
+- [Color Presets](#color-presets)
+- [FAQ](#faq)
 
 
 # Install
