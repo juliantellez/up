@@ -8,9 +8,11 @@ htop
 hub
 kops
 python3
+rust
 terraform
 the_silver_searcher
 vault
 vim
+virtualbox
 wget
 z

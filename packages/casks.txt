@@ -6,4 +6,3 @@ ngrok
 spotify
 vagrant
 visual-studio-code
-virtualbox

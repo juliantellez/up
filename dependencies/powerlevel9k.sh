@@ -24,6 +24,5 @@ install_powerline_fonts () {
     defaults write com.googlecode.iterm2 "Normal Font" -string $1
     defaults write com.googlecode.iterm2 "Non Ascii Font" -string $2
 
-    echo 'POWERLEVEL9K_MODE="nerdfont-complete"' >> $HOME/.zshrc
-    echo 'ZSH_THEME="powerlevel9k/powerlevel9k"' >> $HOME/.zshrc
+    print_success "Powerline fonts installed"
 }

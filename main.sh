@@ -36,5 +36,8 @@ install_zsh
 step "Install: Powerlevel9k"
 install_powerlevel9k
 
-step "Install: Powerlevel9k"
+step "Install: Powerline Fonts"
 install_powerline_fonts "HackNerdFontComplete-Regular" "Monaco"
+
+step: "Config: Copy zshrc"
+copy_zsh_configuration $(pwd)/config/.zshrc
