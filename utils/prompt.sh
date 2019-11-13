@@ -22,11 +22,4 @@ if [[ $ADMIN_ACCESS =~ ^[Yy]$ ]]; then
     exit 0
 fi;
 
-echo "Would you like to watch a video while we run through the configuration? ${font_highlight}(y/n)${font_reset}"
-read WATCH_VIDEO
-
-if [[ $WATCH_VIDEO =~ ^[Yy]$ ]]; then
-    open https://www.youtube.com/watch?v=SGyOaCXr8Lw;
-fi;
-
 sh $(pwd)/main.sh
