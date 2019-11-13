@@ -3,8 +3,8 @@
 . $(pwd)/utils/version.sh
 . $(pwd)/utils/styles.sh
 
-echo "\n"
 printf "
+${color_yellow}
 ╭───────────────────────────────────────────────────╮
 |                                                   |
 |                 ██╗   ██╗██████╗                  |
@@ -15,8 +15,10 @@ printf "
 |                 ╚═════╝ ╚═╝                       |
 |                                                   |
 ╰───────────────────────────────────────────────────╯
-                   ${color_yellow}...in no time
+                   ...in no time
+
+        Install dependencies with little effort.
+
 Version: ${UP_VERSION}
 ${font_reset}
 "
-echo "\n"
