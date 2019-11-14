@@ -7,12 +7,21 @@
 </p>
 
 <p align="center">
-UP is a declarative dotfile configuration. its main goal is to increase your productivity whilst keeping track of your machine dependencies. Get UP and running in no time, start up your machine with one command!
+UP is a declarative dotfile configuration.
+Its main goal is to increase your productivity whilst keeping track of your dependencies.
+Get UP and running in no time, start up your machine with one command!
 </p>
 
 - [Install](#install)
-- [Brews](#brews)
-- [Casks](#casks)
+- [Tooling](#tooling)
+- [Shell](#shell)
+- [Languages](#languages)
+- [Utilities](#utilities)
+- [cli/Binaries](#clibinaries)
+- [Browsers](#browsers)
+- [Editors](#editors)
+- [Productivity](#productivity)
+- [Other](#other)
 - [Color Presets](#color-presets)
 - [FAQ](#faq)
 
@@ -21,44 +30,62 @@ UP is a declarative dotfile configuration. its main goal is to increase your pro
 
 ```bash
 mkdir -p ~/.up; cd ~/.up; \
-curl -L https://github.com/juliantellez/up/tarball/master | tar -xzv --strip-components 1; \
+curl -L https://github.com/juliantellez/up/tarball/master | tar -xzv --strip-components 1 &>> /dev/null; \
 sh bootstrap.sh
 ```
 
-# Brews
+# Tooling
 
-- [awscli](https://github.com/aws/aws-cli)
-- [docker](https://github.com/docker/cli)
-- [fzf](https://github.com/junegunn/fzf)
+- [Xcode](https://developer.apple.com/xcode/)
+- [Home brew](https://brew.sh/)
 - [git](https://github.com/git/git)
+
+# Shell
+- [zsh](https://ohmyz.sh/)
+- [iterm2](https://www.iterm2.com/)
+- [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k)
+- [font-hack-nerd-font](https://github.com/ryanoasis/nerd-fonts)
+
+# Languages
 - [go](https://github.com/golang/go)
+- [Nodejs](https://nodejs.org/en/)
+- [python]()
+- [rust](https://github.com/rust-lang/rust)
+
+# Utilities
+- [fzf](https://github.com/junegunn/fzf)
 - [jq](https://github.com/stedolan/jq)
 - [htop](https://github.com/hishamhm/htop)
 - [hub](https://github.com/github/hub)
-- [kops](https://github.com/kubernetes/kops)
-- [python3]()
-- [rust](https://github.com/rust-lang/rust)
-- [terraform](https://github.com/hashicorp/terraform)
 - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
-- [vault](https://github.com/hashicorp/vault)
-- [vim](https://github.com/vim/vim)
 - [wget](https://github.com/jay/wget)
 - [z](https://github.com/rupa/z)
 
-# Casks
+# cli/Binaries
+- [awscli](https://github.com/aws/aws-cli)
+- [docker](https://github.com/docker/cli)
+- [kops](https://github.com/kubernetes/kops)
+- [terraform](https://github.com/hashicorp/terraform)
+- [vault](https://github.com/hashicorp/vault)
+- [vim](https://github.com/vim/vim)
+- [ngrok](https://ngrok.com/)
+- [vagrant](https://www.vagrantup.com/)
 
-- [caffeine](http://lightheadsw.com/caffeine/)
-- [canary](https://canarymail.io/)
+# Browsers
 - [firefox](https://www.mozilla.org/en-US/firefox/)
 - [google-chrome](https://www.google.com/chrome/)
-- [iterm2](https://www.iterm2.com/)
-- [ngrok](https://ngrok.com/)
-- [spectacle](https://www.spectacleapp.com/)
-- [spotify](https://www.spotify.com)
-- [trailer](https://ptsochantaris.github.io/trailer/)
-- [vagrant](https://www.vagrantup.com/)
+
+# Editors
 - [visual-studio-code](https://code.visualstudio.com/)
-- [font-hack-nerd-font](https://github.com/ryanoasis/nerd-fonts)
+
+# Productivity
+- [caffeine](http://lightheadsw.com/caffeine/)
+- [spectacle](https://www.spectacleapp.com/)
+- [trailer](https://ptsochantaris.github.io/trailer/)
+
+# Other
+- [canary](https://canarymail.io/)
+- [spotify](https://www.spotify.com)
 
 # Color Presets
 
