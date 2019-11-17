@@ -2,6 +2,7 @@
 
 . $(pwd)/dependencies/brew.sh
 . $(pwd)/dependencies/fzf.sh
+. $(pwd)/dependencies/git.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
 . $(pwd)/dependencies/powerlevel9k.sh
@@ -43,6 +44,9 @@ install_zsh
 
 step "Install: Powerlevel9k"
 install_powerlevel9k
+
+step "Config git"
+configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
 
 step "Config: Create Iterm2 configuration"
 create_iterm2_configuration $(pwd)/config/iterm.json

@@ -1,0 +1,21 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+dist
+build
+bower_components
+node_modules
+npm-debug.log*
+.awspublish*
+
+# VS Code
+typings*
+jsconfig.json
+.project
+yarn-error.log
