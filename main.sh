@@ -11,58 +11,64 @@
 . $(pwd)/dependencies/zsh/syntax_highlight.sh
 . $(pwd)/dependencies/xcode.sh
 . $(pwd)/dependencies/zsh.sh
+
 . $(pwd)/helpers/test_internet_connection.sh
 . $(pwd)/helpers/setup_ssh_key.sh
 . $(pwd)/helpers/step.sh
 
-step "Check: Internet connection"
-test_internet_connection
 
-step "Setup: SSH key"
-setup_ssh_key
+main(){
+    step "Check: Internet connection"
+    test_internet_connection
 
-step "Setup: XCode"
-install_xcode
+    step "Setup: SSH key"
+    setup_ssh_key
 
-step "Install: HomeBrew"
-install_home_brew
+    step "Setup: XCode"
+    install_xcode
 
-step "Install: Brews"
-install_brew_packages "brew" $(pwd)/packages/brews.txt
+    step "Install: HomeBrew"
+    install_home_brew
 
-step "Install: Casks"
-install_brew_packages "cask" $(pwd)/packages/casks.txt
+    step "Install: Brews"
+    install_brew_packages "brew" $(pwd)/packages/brews.txt
 
-step "Tap: Casks"
-install_brew_packages "tap" $(pwd)/packages/taps.txt
+    step "Install: Casks"
+    install_brew_packages "cask" $(pwd)/packages/casks.txt
 
-step "Install: FZF fuzzy search"
-install_fzf
+    step "Tap: Casks"
+    install_brew_packages "tap" $(pwd)/packages/taps.txt
 
-step "Install: Nodejs"
-install_nodejs
+    step "Install: FZF fuzzy search"
+    install_fzf
 
-step "Install: Oh My Zsh"
-install_zsh
+    step "Install: Nodejs"
+    install_nodejs
 
-step "Install: Zsh plugins"
-install_powerlevel9k
-install_syntax_highlight
-install_autocomplete
+    step "Install: Oh My Zsh"
+    install_zsh
 
-step "Config git"
-configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
+    step "Install: Zsh plugins"
+    install_powerlevel9k
+    install_syntax_highlight
+    install_autocomplete
 
-step "Config: Create Iterm2 configuration"
-create_iterm2_configuration $(pwd)/config/iterm.json
+    step "Config git"
+    configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
 
-step "Config: Fetch iterm2 color presets"
-fetch_iterm2_color_preset Ciapre.itermcolors
-fetch_iterm2_color_preset FrontEndDelight.itermcolors
-fetch_iterm2_color_preset BirdsOfParadise.itermcolors
+    step "Config: Create Iterm2 configuration"
+    create_iterm2_configuration $(pwd)/config/iterm.json
 
-step "Config: Copy zshrc"
-copy_zsh_configuration $(pwd)/config/.zshrc
+    step "Config: Fetch iterm2 color presets"
+    fetch_iterm2_color_preset Ciapre.itermcolors
+    fetch_iterm2_color_preset FrontEndDelight.itermcolors
+    fetch_iterm2_color_preset BirdsOfParadise.itermcolors
 
-step "Config: mac"
-configure_mac
+    step "Config: Copy zshrc"
+    copy_zsh_configuration $(pwd)/config/.zshrc
+
+    step "Config: mac"
+    configure_mac
+}
+
+main
