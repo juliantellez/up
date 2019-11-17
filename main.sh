@@ -5,6 +5,7 @@
 . $(pwd)/dependencies/git.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
+. $(pwd)/dependencies/zsh/autocomplete.sh
 . $(pwd)/dependencies/zsh/powerlevel9k.sh
 . $(pwd)/dependencies/zsh/syntax_highlight.sh
 . $(pwd)/dependencies/xcode.sh
@@ -46,6 +47,7 @@ install_zsh
 step "Install: Zsh plugins"
 install_powerlevel9k
 install_syntax_highlight
+install_autocomplete
 
 step "Config git"
 configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global

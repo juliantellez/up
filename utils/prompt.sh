@@ -4,7 +4,7 @@
 . $(pwd)/helpers/print.sh
 . $(pwd)/helpers/admin_access.sh
 
-echo "UP will download binaries and configure this machine. Are you sure? ${font_highlight}(y/n)${font_reset}"
+echo "UP will download binaries and configure this machine. Are you sure? ${font_bold}(y/n)${font_reset}"
 read START
 
 if ! [[ $START =~ ^[Yy]$ ]]; then
@@ -12,7 +12,7 @@ if ! [[ $START =~ ^[Yy]$ ]]; then
     exit 0
 fi;
 
-echo "UP requires Admin access. Are you sure? ${font_highlight}(y/n)${font_reset}"
+echo "UP requires Admin access. Are you sure? ${font_bold}(y/n)${font_reset}"
 read ADMIN_ACCESS
 
 if [[ $ADMIN_ACCESS =~ ^[Yy]$ ]]; then
