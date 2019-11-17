@@ -1,10 +1,9 @@
+git
 python3
 go
-rust
 awscli
 wget
 docker
-git
 jq
 htop
 hub
