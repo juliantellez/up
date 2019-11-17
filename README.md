@@ -22,6 +22,7 @@ Get UP and running in no time, start up your machine with one command!
 - [Editors](#editors)
 - [Productivity](#productivity)
 - [Other](#other)
+- [Iterm Profile](#iterm-profile)
 - [Color Presets](#color-presets)
 - [FAQ](#faq)
 
@@ -44,12 +45,14 @@ sh bootstrap.sh
 - [zsh](https://ohmyz.sh/)
 - [iterm2](https://www.iterm2.com/)
 - [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k)
+- [syntax highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [autocomplete](https://github.com/zsh-users/zsh-completions)
 - [font-hack-nerd-font](https://github.com/ryanoasis/nerd-fonts)
 
 # Languages
 - [go](https://github.com/golang/go)
 - [Nodejs](https://nodejs.org/en/)
-- [python]()
+- [python](https://github.com/python/cpython)
 - [rust](https://github.com/rust-lang/rust)
 
 # Utilities
@@ -86,6 +89,14 @@ sh bootstrap.sh
 # Other
 - [canary](https://canarymail.io/)
 - [spotify](https://www.spotify.com)
+
+# Iterm Profile
+
+UP uses a dynamic profile [see](https://www.iterm2.com/documentation-dynamic-profiles.html). To enable it do:
+
+```
+Iterm2 > Preferences > Profiles > UP Config > Other Actions > Set as Default
+```
 
 # Color Presets
 
