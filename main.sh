@@ -5,7 +5,8 @@
 . $(pwd)/dependencies/git.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
-. $(pwd)/dependencies/powerlevel9k.sh
+. $(pwd)/dependencies/zsh/powerlevel9k.sh
+. $(pwd)/dependencies/zsh/syntax_highlight.sh
 . $(pwd)/dependencies/xcode.sh
 . $(pwd)/dependencies/zsh.sh
 . $(pwd)/helpers/test_internet_connection.sh
@@ -42,8 +43,9 @@ install_nodejs
 step "Install: Oh My Zsh"
 install_zsh
 
-step "Install: Powerlevel9k"
+step "Install: Zsh plugins"
 install_powerlevel9k
+install_syntax_highlight
 
 step "Config git"
 configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
