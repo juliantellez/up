@@ -10,3 +10,4 @@ trailer
 vagrant
 visual-studio-code
 font-hack-nerd-font
+font-fira-code
