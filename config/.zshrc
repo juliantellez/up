@@ -26,7 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # AWS #
 ##################
-source /usr/local/bin/aws_zsh_completer.sh # tab compleition
+complete -C $(which aws_completer) aws # tab compleition
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
