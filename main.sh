@@ -3,6 +3,7 @@
 . $(pwd)/dependencies/brew.sh
 . $(pwd)/dependencies/fzf.sh
 . $(pwd)/dependencies/git.sh
+. $(pwd)/dependencies/mac.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
 . $(pwd)/dependencies/zsh/autocomplete.sh
@@ -62,3 +63,6 @@ fetch_iterm2_color_preset BirdsOfParadise.itermcolors
 
 step "Config: Copy zshrc"
 copy_zsh_configuration $(pwd)/config/.zshrc
+
+step "Config: mac"
+configure_mac
