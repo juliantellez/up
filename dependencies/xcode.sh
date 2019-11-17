@@ -7,6 +7,8 @@ install_xcode() {
         test -d "${xpath}" && test -x "${xpath}" ; then
         print_success "Xcode already installed."
         else
-        xcode-select --install && print_success "Xcode installed!"
+        xcode-select --install
+        print_success "Please install xcode and re-run UP!"
+        exit 1
     fi
 }
