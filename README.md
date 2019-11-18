@@ -21,7 +21,7 @@ Get UP and running in no time, start up your machine with one command!
 - [Browsers](#browsers)
 - [Editors](#editors)
 - [Productivity](#productivity)
-- [Other](#other)
+- [Apps](#apps)
 - [Configuration files](#configuration-files)
 - [Mac Configuration](#mac-configuration)
 - [Iterm Profile](#iterm-profile)
@@ -78,6 +78,7 @@ sh bootstrap.sh
 - [awscli](https://github.com/aws/aws-cli): Unified command line interface to Amazon Web Services.
 - [docker](https://github.com/docker/cli): Package Software into Standardized Units for Development, Shipment and Deployment.
 - [kops](https://github.com/kubernetes/kops): The easiest way to get a production grade Kubernetes cluster up and running.
+- [mas](https://github.com/mas-cli/mas): CLI for the Mac App Store.
 - [terraform](https://github.com/hashicorp/terraform): Tool for building, changing, and versioning infrastructure safely and efficiently.
 - [vault](https://github.com/hashicorp/vault): tTol for securely accessing secrets.
 - [ngrok](https://ngrok.com/): A multiplatform tunnelling and reverse proxy
@@ -98,7 +99,10 @@ sh bootstrap.sh
 - [trailer](https://ptsochantaris.github.io/trailer/): Track pull requests and issues across repositories.
 - [day-o](https://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock): Menu bar clock replacement with a simple calendar for your Mac.
 
-# Other
+# Apps
+- [gitter](https://gitter.im/): A chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
+- [slack](https://slack.com/): Brings all your communication together
+- [giphy capture](https://giphy.com/apps/giphycapture): The best way to create GIFs on your Mac.
 - [canary](https://canarymail.io/): Modern email apps compromise on security or features. Canary does not.
 - [spotify](https://www.spotify.com): Music for everyone.
 
@@ -151,6 +155,5 @@ These configs and dotfiles stand on the shoulders of the following giants:
 
   Yes, currently tested on:
 
-  - macOS Sierra - 10.12.6
   - macOS High Sierra - 10.13.6
   - macOS Mojave - 10.14.6

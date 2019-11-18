@@ -8,6 +8,7 @@ jq
 htop
 hub
 kops
+mas
 terraform
 the_silver_searcher
 vault

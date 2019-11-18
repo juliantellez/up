@@ -4,9 +4,11 @@ day-o
 firefox
 font-fira-code
 font-hack-nerd-font
+gitter
 google-chrome
 iterm2
 ngrok
+slack
 spectacle
 spotify
 trailer
