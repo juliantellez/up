@@ -85,6 +85,7 @@ sh bootstrap.sh
 - [caffeine](http://lightheadsw.com/caffeine/)
 - [spectacle](https://www.spectacleapp.com/)
 - [trailer](https://ptsochantaris.github.io/trailer/)
+- [day-o](https://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock)
 
 # Other
 - [canary](https://canarymail.io/)

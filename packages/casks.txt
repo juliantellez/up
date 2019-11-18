@@ -1,5 +1,6 @@
 caffeine
 canary
+day-o
 firefox
 google-chrome
 iterm2
