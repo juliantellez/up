@@ -1,7 +1,7 @@
 <h1 align="center">UP</h1>
 
 <p align="center">
-  <a href="https://github.com/juliantellez/lambcycle" target="_blank">
+  <a href="https://github.com/juliantellez/up" target="_blank">
     <img alt="lambcycle" src="./assets/up.png" width="144">
   </a>
 </p>
@@ -22,6 +22,8 @@ Get UP and running in no time, start up your machine with one command!
 - [Editors](#editors)
 - [Productivity](#productivity)
 - [Other](#other)
+- [Configuration files](#configuration-files)
+- [Mac Configuration](#mac-configuration)
 - [Iterm Profile](#iterm-profile)
 - [Color Presets](#color-presets)
 - [Acknowledgements](#acknowledgements)
@@ -29,6 +31,14 @@ Get UP and running in no time, start up your machine with one command!
 
 
 # Install
+
+<p align="center">
+  <a href="https://github.com/juliantellez/up" target="_blank">
+    <img alt="lambcycle" src="./assets/up_cli.png" width="500">
+  </a>
+</p>
+
+Copy the following snippet into your current terminal.
 
 ```bash
 mkdir -p ~/.up; cd ~/.up; \
@@ -70,7 +80,6 @@ sh bootstrap.sh
 - [kops](https://github.com/kubernetes/kops): The easiest way to get a production grade Kubernetes cluster up and running.
 - [terraform](https://github.com/hashicorp/terraform): Tool for building, changing, and versioning infrastructure safely and efficiently.
 - [vault](https://github.com/hashicorp/vault): tTol for securely accessing secrets.
-- [vim](https://github.com/vim/vim): Improved version of the good old UNIX editor Vi.
 - [ngrok](https://ngrok.com/): A multiplatform tunnelling and reverse proxy
 - [vagrant](https://www.vagrantup.com/): Development Environments Made Easy
 - [virtualbox](https://www.virtualbox.org/wiki/VirtualBox): general-purpose full virtualizer for x86 hardware
@@ -81,6 +90,7 @@ sh bootstrap.sh
 
 # Editors
 - [visual-studio-code](https://code.visualstudio.com/): Code editor redefined and optimized for building and debugging modern web and cloud applications. 
+- [vim](https://github.com/vim/vim): Improved version of the good old UNIX editor Vi.
 
 # Productivity
 - [caffeine](http://lightheadsw.com/caffeine/):  Click it to prevent your Mac from automatically going to sleep.
@@ -91,6 +101,25 @@ sh bootstrap.sh
 # Other
 - [canary](https://canarymail.io/): Modern email apps compromise on security or features. Canary does not.
 - [spotify](https://www.spotify.com): Music for everyone.
+
+# Configuration files
+
+- [gitconfig](./config/.gitconfig): Get and set global options.
+- [gitignore](./config/.gitignore_global): Specifies intentionally untracked files to ignore.
+- [zshrc](./config/.zshrc): 'runcom' or 'run commands' for zsh
+- [iterm](./config/iterm.json): Iterm2 profile
+
+# Mac Configuration
+Please read the [configurations](./dependencies/mac.sh) before applying them. Note that you can always reset them by typing:
+
+```
+defaults delete <domain>; # sets domain to default settings
+killall <domain>; # restarts domain
+
+e.g
+defaults delete Dock;
+kill all Dock;
+```
 
 # Iterm Profile
 
