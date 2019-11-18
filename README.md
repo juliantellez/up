@@ -43,7 +43,7 @@ sh bootstrap.sh
 - [git](https://github.com/git/git): A free and open source distributed version control system.
 
 # Shell
-- [zsh](https://ohmyz.sh/): A delightful, open source, community-driven framework for managing your ZSH configuration.
+- [ohmyz](https://ohmyz.sh/): A delightful, open source, community-driven framework for managing your ZSH configuration.
 - [iterm2](https://www.iterm2.com/): A replacement for Terminal.
 - [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k): The most awesome Powerline theme for ZSH around!
 - [zsh syntax highlight](https://github.com/zsh-users/zsh-syntax-highlighting): Enables highlighting of commands whilst they are typed.
