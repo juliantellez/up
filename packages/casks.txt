@@ -2,6 +2,8 @@ caffeine
 canary
 day-o
 firefox
+font-fira-code
+font-hack-nerd-font
 google-chrome
 iterm2
 ngrok
@@ -10,5 +12,4 @@ spotify
 trailer
 vagrant
 visual-studio-code
-font-hack-nerd-font
-font-fira-code
+virtualbox

@@ -24,6 +24,7 @@ Get UP and running in no time, start up your machine with one command!
 - [Other](#other)
 - [Iterm Profile](#iterm-profile)
 - [Color Presets](#color-presets)
+- [Acknowledgements](#acknowledgements)
 - [FAQ](#faq)
 
 
@@ -73,6 +74,7 @@ sh bootstrap.sh
 - [vim](https://github.com/vim/vim)
 - [ngrok](https://ngrok.com/)
 - [vagrant](https://www.vagrantup.com/)
+- [virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 # Browsers
 - [firefox](https://www.mozilla.org/en-US/firefox/)
@@ -108,11 +110,19 @@ follow the description below and import them from the color_presets folder.
 Iterm2 > Preferences > Profiles > Colors > Color Presets > Import
 ```
 
+# Acknowledgements
+These configs and dotfiles stand on the shoulders of the following giants:
+
+- https://github.com/minamarkham/formation
+- https://github.com/mathiasbynens/dotfiles
+- https://github.com/kevinSuttle/macOS-Defaults
+
 # FAQ
 
 - Have you tested these dotfiles?
 
   Yes, currently tested on:
 
+  - macOS Sierra - 10.12.6
   - macOS High Sierra - 10.13.6
   - macOS Mojave - 10.14.6
