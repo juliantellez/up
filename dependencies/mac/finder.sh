@@ -24,3 +24,5 @@ print_success "Finder: When performing a search, search the current folder by de
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 print_success "Finder: Avoid creating .DS_Store files on network or USB volumes"
+
+killall Finder

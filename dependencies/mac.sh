@@ -7,6 +7,7 @@ configure_mac() {
     if ask "Would you like to configure this mac? ${1}" Y; then
         sh $(pwd)/dependencies/mac/dock.sh
         sh $(pwd)/dependencies/mac/finder.sh
+        sh $(pwd)/dependencies/mac/menu_bar.sh
 
         print_success "Mac config updated"
         else
