@@ -1,6 +1,7 @@
 git
 python3
 go
+rustup
 awscli
 wget
 docker
@@ -9,6 +10,7 @@ htop
 hub
 kops
 mas
+tree
 terraform
 the_silver_searcher
 vault

@@ -62,15 +62,17 @@ sh bootstrap.sh
 
 # Languages
 - [Go](https://github.com/golang/go): Open source programming language that makes it easy to build simple, reliable, and efficient software.
-- [Nodejs](https://nodejs.org/en/): A JavaScript runtime built on Chrome's V8 JavaScript engine
+- [Nodejs](https://nodejs.org/en/): A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [Python](https://github.com/python/cpython): An ideal language for scripting and rapid application development in many areas on most platforms.
+- [Rust](https://www.rust-lang.org/tools/install): A language empowering everyone to build reliable and efficient software.
 
 # Utilities
 - [fzf](https://github.com/junegunn/fzf): General-purpose command-line fuzzy finder.
 - [jq](https://github.com/stedolan/jq): A lightweight and flexible command-line JSON processor.
-- [htop](https://github.com/hishamhm/htop): An interactive process viewer
+- [htop](https://github.com/hishamhm/htop): An interactive process viewer.
 - [hub](https://github.com/github/hub): Commands that make working with GitHub easier.
 - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher): A code searching tool similar to ack, with a focus on speed.
+- [tree](https://linux.die.net/man/1/tree): A depth indented listing of files.
 - [wget](https://github.com/jay/wget): A free utility for non-interactive download of files from the Web.
 - [z](https://github.com/rupa/z): Tracks your most used directories, based on 'frecency'.
 
@@ -81,12 +83,12 @@ sh bootstrap.sh
 - [mas](https://github.com/mas-cli/mas): CLI for the Mac App Store.
 - [terraform](https://github.com/hashicorp/terraform): Tool for building, changing, and versioning infrastructure safely and efficiently.
 - [vault](https://github.com/hashicorp/vault): tTol for securely accessing secrets.
-- [ngrok](https://ngrok.com/): A multiplatform tunnelling and reverse proxy
-- [vagrant](https://www.vagrantup.com/): Development Environments Made Easy
-- [virtualbox](https://www.virtualbox.org/wiki/VirtualBox): general-purpose full virtualizer for x86 hardware
+- [ngrok](https://ngrok.com/): A multiplatform tunnelling and reverse proxy.
+- [vagrant](https://www.vagrantup.com/): Development Environments Made Easy.
+- [virtualbox](https://www.virtualbox.org/wiki/VirtualBox): general-purpose full virtualizer for x86 hardware.
 
 # Browsers
-- [firefox](https://www.mozilla.org/en-US/firefox/): Free and open-source web browser developed by the Mozilla Foundation
+- [firefox](https://www.mozilla.org/en-US/firefox/): Free and open-source web browser developed by the Mozilla Foundation.
 - [google-chrome](https://www.google.com/chrome/): A cross-platform web browser developed by Google.
 
 # Editors
@@ -95,13 +97,13 @@ sh bootstrap.sh
 
 # Productivity
 - [caffeine](http://lightheadsw.com/caffeine/):  Click it to prevent your Mac from automatically going to sleep.
-- [spectacle](https://www.spectacleapp.com/): Move and resize windows with ease
+- [spectacle](https://www.spectacleapp.com/): Move and resize windows with ease.
 - [trailer](https://ptsochantaris.github.io/trailer/): Track pull requests and issues across repositories.
 - [day-o](https://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock): Menu bar clock replacement with a simple calendar for your Mac.
 
 # Apps
 - [gitter](https://gitter.im/): A chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
-- [slack](https://slack.com/): Brings all your communication together
+- [slack](https://slack.com/): Brings all your communication together.
 - [giphy capture](https://giphy.com/apps/giphycapture): The best way to create GIFs on your Mac.
 - [canary](https://canarymail.io/): Modern email apps compromise on security or features. Canary does not.
 - [spotify](https://www.spotify.com): Music for everyone.
@@ -110,8 +112,8 @@ sh bootstrap.sh
 
 - [gitconfig](./config/.gitconfig): Get and set global options.
 - [gitignore](./config/.gitignore_global): Specifies intentionally untracked files to ignore.
-- [zshrc](./config/.zshrc): 'runcom' or 'run commands' for zsh
-- [iterm](./config/iterm.json): Iterm2 profile
+- [zshrc](./config/.zshrc): 'runcom' or 'run commands' for zsh.
+- [iterm](./config/iterm.json): Iterm2 profile.
 
 # Mac Configuration
 Please read the [configurations](./dependencies/mac.sh) before applying them. Note that you can always reset them by typing:
@@ -157,3 +159,4 @@ These configs and dotfiles stand on the shoulders of the following giants:
 
   - macOS High Sierra - 10.13.6
   - macOS Mojave - 10.14.6
+  - macOS Catalina - 10.15.1
