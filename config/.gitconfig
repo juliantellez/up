@@ -1,7 +1,7 @@
 [core]
     editor = vim
     autocrlf = input
-    excludesfile = $HOME/.gitignore_global
+    excludesfile = $HOME/.gitignore
 [color]
     ui = auto
 [color "branch"]
