@@ -1,3 +1,6 @@
+#!/bin/bash
+
+. $(pwd)/helpers/create_backup.sh
 . $(pwd)/helpers/print.sh
 
 create_git_config() {
@@ -20,6 +23,9 @@ create_git_config() {
 
 configure_git(){
     if ask "Would you configure git? ${1}" Y; then
+        create_backup "git" "gitconfig" $HOME/.gitconfig
+        create_backup "git" "gitignore" $HOME/.gitignore
+
         create_git_config $1 $2
     else
         print_error "Aborting..."
