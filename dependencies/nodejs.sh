@@ -3,7 +3,7 @@
 . $(pwd)/helpers/print.sh
 
 install_nodejs(){
-    local dir=$HOME/.nvm/nvm.shd
+    local dir=$HOME/.nvm/nvm.sh
 
     if ! [[ -f $dir ]]; then
         curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
