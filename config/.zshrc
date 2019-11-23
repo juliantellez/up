@@ -10,7 +10,15 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version background_jobs history)
 
-plugins=(git node npm zsh-syntax-highlighting zsh-completions)
+plugins=(
+    git
+    docker
+    docker-compose
+    node
+    npm
+    zsh-syntax-highlighting
+    zsh-completions
+)
 
 # reloading compleition
 autoload -U compinit && compinit
