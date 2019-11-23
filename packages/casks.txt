@@ -1,6 +1,7 @@
 caffeine
 canary
 day-o
+docker
 firefox
 font-fira-code
 font-hack-nerd-font

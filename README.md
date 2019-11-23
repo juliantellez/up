@@ -20,6 +20,7 @@ Get UP and running in no time, start up your machine with one command!
 - [cli/Binaries](#clibinaries)
 - [Browsers](#browsers)
 - [Editors](#editors)
+- [Databases](#databases)
 - [Productivity](#productivity)
 - [Apps](#apps)
 - [Configuration files](#configuration-files)
@@ -94,6 +95,10 @@ sh bootstrap.sh
 # Editors
 - [visual-studio-code](https://code.visualstudio.com/): Code editor redefined and optimized for building and debugging modern web and cloud applications. 
 - [vim](https://github.com/vim/vim): Improved version of the good old UNIX editor Vi.
+
+# Databases
+- [postgress](https://www.postgresql.org/): reliable and robust object-relational database.
+- [redis](https://redis.io/): in-memory data structure store.
 
 # Productivity
 - [caffeine](http://lightheadsw.com/caffeine/):  Click it to prevent your Mac from automatically going to sleep.

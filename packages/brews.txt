@@ -4,12 +4,13 @@ go
 rustup
 awscli
 wget
-docker
 jq
 htop
 hub
 kops
 mas
+postgresql
+redis
 tree
 terraform
 the_silver_searcher
