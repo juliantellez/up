@@ -2,7 +2,7 @@
 
 #
 # This script should be run via:
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantelez/up/master/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/install.sh)"
 #
 
 mkdir -p ~/.up; cd ~/.up; \

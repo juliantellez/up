@@ -42,7 +42,7 @@ Get UP and running in no time, start up your machine with one command!
 Copy the following snippet into your current terminal.
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantelez/up/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/install.sh)"
 ```
 
 # Tooling
