@@ -7,9 +7,12 @@ jobs:
       - name: virtual env info
         run: |
           system_profiler SPSoftwareDataType
-      - name: checkout
+      - name: create workspace
         run: |
-          mkdir -p ~/.up; cd ~/.up; \
-          curl -L https://github.com/juliantellez/up/tarball/master | tar -xzv --strip-components 1 &> /dev/null; \
+          mkdir -p ~/.up; cd ~/.up;
+      - name: fetch
+        run: |
+          curl -L https://github.com/juliantellez/up/tarball/master | tar -xzv --strip-components 1 &> /dev/null;
+      - name: list
+        run: |
           ls
-
