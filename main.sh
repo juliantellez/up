@@ -22,9 +22,6 @@ steps(){
     step "Check: Internet connection"
     test_internet_connection
 
-    # step "Setup: SSH key"
-    # setup_ssh_key
-
     step "Setup: XCode"
     install_xcode
 
@@ -46,16 +43,19 @@ steps(){
     step "Install: Nodejs"
     install_nodejs
 
-    # step "Install: Oh My Zsh"
-    # install_zsh
+    step "Install: Oh My Zsh"
+    install_zsh
 
-    # step "Install: Zsh plugins"
-    # install_powerlevel9k
-    # install_syntax_highlight
-    # install_autocomplete
+    step "Install: Zsh plugins"
+    install_powerlevel9k
+    install_syntax_highlight
+    install_autocomplete
 
     # step "Config git"
     # configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
+
+    # step "Setup: SSH key"
+    # setup_ssh_key
 
     # step "Config: Create Iterm2 configuration"
     # create_iterm2_configuration $(pwd)/config/iterm.json

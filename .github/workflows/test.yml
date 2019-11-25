@@ -1,7 +1,7 @@
 on: push
 jobs:
-  test:
-    name: test
+  VM Checks:
+    name: Run main script
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
       - name: Virtual env info
@@ -13,7 +13,7 @@ jobs:
       - name: Fetch
         run: |
           curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
-      - name: sh main
+      - name: run steps
         run: |
           export TERM=xterm-256color;
           . $(pwd)/main.sh;
