@@ -28,14 +28,14 @@ steps(){
     step "Install: HomeBrew"
     install_home_brew
 
+    step "Tap: Casks"
+    install_brew_packages "tap" $(pwd)/packages/taps.txt
+
     step "Install: Brews"
     install_brew_packages "brew" $(pwd)/packages/brews.txt
 
     step "Install: Casks"
     install_brew_packages "cask" $(pwd)/packages/casks.txt
-
-    step "Tap: Casks"
-    install_brew_packages "tap" $(pwd)/packages/taps.txt
 
     step "Install: FZF fuzzy search"
     install_fzf
