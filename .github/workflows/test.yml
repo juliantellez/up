@@ -8,5 +8,8 @@ jobs:
         run: |
           system_profiler SPSoftwareDataType
       - name: checkout
-        runs:
-          plugin: 'checkout'
+        run: |
+          mkdir -p ~/.up; cd ~/.up; \
+          curl -L https://github.com/juliantellez/up/tarball/master | tar -xzv --strip-components 1 &> /dev/null; \
+          ls
+
