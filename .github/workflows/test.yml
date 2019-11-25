@@ -15,4 +15,4 @@ jobs:
           curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
       - name: sh main
         run: |
-          . $(pwd)/main.sh; main
+          . $(pwd)/main.sh; steps
