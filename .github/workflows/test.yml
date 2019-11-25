@@ -1,6 +1,6 @@
 on: push
 jobs:
-  VM Checks:
+  test:
     name: Run main script
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
