@@ -70,5 +70,3 @@ main(){
     step "Config: mac"
     configure_mac
 }
-
-main

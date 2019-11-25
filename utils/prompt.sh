@@ -3,6 +3,7 @@
 . $(pwd)/utils/styles.sh
 . $(pwd)/helpers/print.sh
 . $(pwd)/helpers/admin_access.sh
+. $(pwd)/main.sh
 
 echo "UP will download binaries and configure this machine. Are you sure? ${font_bold}(y/n)${font_reset}"
 read START
@@ -22,4 +23,4 @@ if [[ $ADMIN_ACCESS =~ ^[Yy]$ ]]; then
     exit 0
 fi;
 
-time sh $(pwd)/main.sh
+time main
