@@ -135,8 +135,17 @@ kill all Dock;
 UP uses a dynamic profile [see](https://www.iterm2.com/documentation-dynamic-profiles.html). To enable it do:
 
 ```
-Iterm2 > Preferences > Profiles > UP Config > Other Actions > Set as Default
+Iterm2 >
+    Preferences >
+        Profiles > UP Config >
+            Other Actions > Set as Default
 ```
+
+<p align="center">
+  <a href="https://github.com/juliantellez/up" target="_blank">
+    <img alt="lambcycle" src="./assets/up_iterm_config.gif" width="500">
+  </a>
+</p>
 
 # Color Presets
 
