@@ -1,0 +1,9 @@
+on: push
+jobs:
+  test:
+    name: test
+    runs-on:  macos-latest # macOS Catalina 10.15
+    steps:
+      - name: greeting
+        run: |
+          echo "Hello world"
