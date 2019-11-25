@@ -3,17 +3,17 @@
 . $(pwd)/helpers/create_backup.sh
 . $(pwd)/helpers/print.sh
 
+#
+# GIT_USERNAME and GIT_EMAIL should be declared in env
+#
 create_git_config() {
     cp $1 $HOME/.gitconfig
     print_success "Git config created"
     cp $2 $HOME/.gitignore
     print_success "Git ignore created"
 
-    print_question "Git username"
-    read GIT_USERNAME
-
-    print_question "Git email"
-    read GIT_EMAIL
+    print_info "username: ${GIT_USERNAME}"
+    print_info "email: ${GIT_EMAIL}"
 
     git config --global user.name $GIT_USERNAME
     git config --global user.email $GIT_EMAIL
