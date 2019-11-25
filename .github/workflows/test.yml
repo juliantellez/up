@@ -7,3 +7,6 @@ jobs:
       - name: virtual env info
         run: |
           system_profiler SPSoftwareDataType
+      - name: checkout
+        runs:
+          plugin: 'checkout'
