@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: greeting
         run: |
-          echo "Hello world"
+          ls -al
