@@ -13,6 +13,6 @@ jobs:
       - name: Fetch
         run: |
           curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
-      - name: list
+      - name: sh main
         run: |
-          ls
+          . $(pwd)/main.sh; main
