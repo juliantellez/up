@@ -4,6 +4,6 @@ jobs:
     name: test
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
-      - name: greeting
+      - name: virtual env info
         run: |
-          ls -al
+          system_profiler SPSoftwareDataType
