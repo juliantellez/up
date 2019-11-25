@@ -16,8 +16,9 @@
 . $(pwd)/helpers/setup_ssh_key.sh
 . $(pwd)/helpers/step.sh
 
+. $(pwd)/utils/spinner.sh
 
-main(){
+steps(){
     step "Check: Internet connection"
     test_internet_connection
 
@@ -69,4 +70,17 @@ main(){
 
     step "Config: mac"
     configure_mac
+}
+
+main() {
+    function teardown {
+        kill -TERM $STEPS_PID &> /dev/null
+    }
+
+    trap teardown SIGTERM EXIT
+
+    time steps &
+
+    STEPS_PID=$!
+    spinner $STEPS_PID
 }
