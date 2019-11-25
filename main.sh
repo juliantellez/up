@@ -72,15 +72,15 @@ steps(){
     # configure_mac
 }
 
-main() {
-    function teardown {
-        kill -TERM $STEPS_PID &> /dev/null
-    }
+# main() {
+#     function teardown {
+#         kill -TERM $STEPS_PID &> /dev/null
+#     }
 
-    trap teardown SIGTERM EXIT
+#     trap teardown SIGTERM EXIT
 
-    time steps &
+#     time steps &
 
-    STEPS_PID=$!
-    spinner $STEPS_PID
-}
+#     STEPS_PID=$!
+#     spinner $STEPS_PID
+# }
