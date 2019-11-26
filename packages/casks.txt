@@ -14,4 +14,3 @@ vagrant
 visual-studio-code
 font-fira-code
 font-hack-nerd-font
-google-chrome
