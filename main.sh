@@ -54,8 +54,8 @@ steps(){
     # step "Config git"
     # configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
 
-    # step "Setup: SSH key"
-    # setup_ssh_key
+    step "Setup: SSH key"
+    setup_ssh_key
 
     step "Config: Create Iterm2 configuration"
     create_iterm2_configuration $(pwd)/config/iterm.json
