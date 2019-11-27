@@ -15,6 +15,8 @@ create_iterm2_configuration() {
 
             cp $1 "${iterm_folder}"
             print_success "Enable via: Iterm2 > Preferences > Profiles > UP Config > Other Actions > Set as default"
+            else
+            print_error "Path does not exist: ${iterm_folder}"
         fi
 
         else
