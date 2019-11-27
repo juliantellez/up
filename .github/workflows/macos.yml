@@ -22,5 +22,6 @@ jobs:
           export GIT_USERNAME="foo"
           export GIT_EMAIL="foo@baz.gizmo"
 
+          # Run Steps
           . $(pwd)/main.sh;
           steps;

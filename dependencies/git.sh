@@ -18,7 +18,7 @@ create_git_config() {
     print_info "email: ${GIT_EMAIL}"
     git config --global user.email $GIT_EMAIL
 
-    print_info "gitignore: ${$HOME}/.gitignore"
+    print_info "gitignore: ${HOME}/.gitignore"
     git config --global core.excludesfile $HOME/.gitignore
 
     print_success "Git: user, email and gitignore added"
