@@ -1,7 +1,7 @@
 on: push
 jobs:
   test:
-    name: Run main script
+    name: Test UP
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
       - name: Virtual env info
@@ -10,13 +10,15 @@ jobs:
       - name: Create workspace
         run: |
           mkdir -p ~/.up; cd ~/.up;
-      - name: Fetch
+      - name: Fetch Commit
         run: |
           curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
-      - name: run steps
+      - name: Setup Test env
         run: |
           defaults write -g AppleLanguages '("en-GB")';
           export TERM=xterm-256color;
           export UP_ENV="development";
+      - name: Run steps
+        run: |
           . $(pwd)/main.sh;
           steps

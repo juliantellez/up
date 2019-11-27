@@ -3,6 +3,8 @@ canary
 day-o
 docker
 firefox
+font-fira-code
+font-hack-nerd-font
 gitter
 iterm2
 ngrok
@@ -12,5 +14,3 @@ spotify
 trailer
 vagrant
 visual-studio-code
-font-fira-code
-font-hack-nerd-font
