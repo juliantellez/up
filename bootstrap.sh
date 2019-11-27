@@ -2,4 +2,9 @@
 
 . $(pwd)/utils/logo.sh
 . $(pwd)/utils/prompt.sh
-. $(pwd)/utils/logo.sh
+. $(pwd)/main.sh
+
+logo
+prompt
+main
+logo

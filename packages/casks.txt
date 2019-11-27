@@ -6,7 +6,6 @@ firefox
 font-fira-code
 font-hack-nerd-font
 gitter
-google-chrome
 iterm2
 ngrok
 slack
@@ -15,4 +14,3 @@ spotify
 trailer
 vagrant
 visual-studio-code
-virtualbox

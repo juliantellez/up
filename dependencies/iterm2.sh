@@ -9,11 +9,16 @@ create_iterm2_configuration() {
         local iterm_folder="${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 
         sudo mkdir -p $iterm_folder
-        create_backup "iterm" "iterm" "${iterm_folder}/iterm.json"
 
-        cp $1 "${iterm_folder}"
+        if [[ -d $iterm_folder ]]; then
+            create_backup "iterm" "iterm" "${iterm_folder}/iterm.json"
 
-        print_success "Enable via: Iterm2 > Preferences > Profiles > UP Config > Other Actions > Set as default"
+            cp $1 "${iterm_folder}"
+            print_success "Enable via: Iterm2 > Preferences > Profiles > UP Config > Other Actions > Set as default"
+            else
+            print_error "Path does not exist: ${iterm_folder}"
+        fi
+
         else
         print_error "Aborting..."
     fi

@@ -19,13 +19,20 @@ check_github_key() {
 
 create_ssh_key() {
     if ask "No SSH key found. Create one?" Y; then
-        ssh-keygen -t rsa; check_github_key;
+        print_info "Creating ssh-key";
+        ssh-keygen -t rsa;
+        check_github_key;
     else
         return 0;
     fi
 }
 
 setup_ssh_key() {
+    # Override for development
+    if [ "${UP_ENV}" = "development" ]; then
+        return 0;
+    fi
+
     local pub=$HOME/.ssh/id_rsa.pub
 
     if ! [[ -f $pub ]]; then

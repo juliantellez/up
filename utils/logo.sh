@@ -3,6 +3,7 @@
 . $(pwd)/utils/version.sh
 . $(pwd)/utils/styles.sh
 
+logo() {
 printf "
 ${color_yellow}
 ╭───────────────────────────────────────────────────╮
@@ -23,3 +24,4 @@ ${color_yellow}
 Version: ${UP_VERSION}
 ${font_reset}
 "
+}

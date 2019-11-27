@@ -22,23 +22,20 @@ steps(){
     step "Check: Internet connection"
     test_internet_connection
 
-    step "Setup: SSH key"
-    setup_ssh_key
-
     step "Setup: XCode"
     install_xcode
 
     step "Install: HomeBrew"
     install_home_brew
 
+    step "Tap: Casks"
+    install_brew_packages "tap" $(pwd)/packages/taps.txt
+
     step "Install: Brews"
     install_brew_packages "brew" $(pwd)/packages/brews.txt
 
     step "Install: Casks"
     install_brew_packages "cask" $(pwd)/packages/casks.txt
-
-    step "Tap: Casks"
-    install_brew_packages "tap" $(pwd)/packages/taps.txt
 
     step "Install: FZF fuzzy search"
     install_fzf
@@ -56,6 +53,9 @@ steps(){
 
     step "Config git"
     configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
+
+    step "Setup: SSH key"
+    setup_ssh_key
 
     step "Config: Create Iterm2 configuration"
     create_iterm2_configuration $(pwd)/config/iterm.json
