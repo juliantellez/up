@@ -7,6 +7,12 @@ jobs:
       - name: Virtual env info
         run: |
           system_profiler SPSoftwareDataType
+      - name: Create workspace
+        run: |
+          mkdir -p ~/.up; cd ~/.up;
+      - name: Fetch Commit
+        run: |
+          curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
       - name: Install and Run UP
         run: |
           # Setup Test env
@@ -17,4 +23,4 @@ jobs:
           export GIT_EMAIL="foo@baz.gizmo"
 
           # Install
-          sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/${GITHUB_SHA}/install.sh) $GITHUB_SHA"
+          sh bootstrap.sh
