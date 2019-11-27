@@ -5,11 +5,6 @@
 . $(pwd)/utils/styles.sh
 
 check_github_key() {
-    # Override for development
-    if [ "${UP_ENV}" = "development" ]; then
-        return 0;
-    fi
-
     if ask "SSH key found. Enter it in Github?" Y; then
         print 'Public key copied! Paste into Github…' ${tput_color_green}
         [[ -f $pub ]] && cat $pub | pbcopy
@@ -33,6 +28,11 @@ create_ssh_key() {
 }
 
 setup_ssh_key() {
+    # Override for development
+    if [ "${UP_ENV}" = "development" ]; then
+        return 0;
+    fi
+
     local pub=$HOME/.ssh/id_rsa.pub
 
     if ! [[ -f $pub ]]; then
