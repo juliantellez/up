@@ -1,7 +1,7 @@
 on: push
 jobs:
   test:
-    name: Test UP
+    name: Test UP installation
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
       - name: Virtual env info

@@ -57,8 +57,8 @@ steps(){
     # step "Setup: SSH key"
     # setup_ssh_key
 
-    # step "Config: Create Iterm2 configuration"
-    # create_iterm2_configuration $(pwd)/config/iterm.json
+    step "Config: Create Iterm2 configuration"
+    create_iterm2_configuration $(pwd)/config/iterm.json
 
     step "Config: Fetch iterm2 color presets"
     fetch_iterm2_color_preset Ciapre.itermcolors
