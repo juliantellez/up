@@ -84,11 +84,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 - [vault](https://github.com/hashicorp/vault): tTol for securely accessing secrets.
 - [ngrok](https://ngrok.com/): A multiplatform tunnelling and reverse proxy.
 - [vagrant](https://www.vagrantup.com/): Development Environments Made Easy.
-- [virtualbox](https://www.virtualbox.org/wiki/VirtualBox): general-purpose full virtualizer for x86 hardware.
 
 # Browsers
 - [firefox](https://www.mozilla.org/en-US/firefox/): Free and open-source web browser developed by the Mozilla Foundation.
-- [google-chrome](https://www.google.com/chrome/): A cross-platform web browser developed by Google.
+- [google-chrome-canary](https://www.google.com/chrome/canary/): Nightly build for developers.
 
 # Editors
 - [visual-studio-code](https://code.visualstudio.com/): Code editor redefined and optimized for building and debugging modern web and cloud applications. 
