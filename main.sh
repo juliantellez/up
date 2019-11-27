@@ -51,8 +51,8 @@ steps(){
     install_syntax_highlight
     install_autocomplete
 
-    # step "Config git"
-    # configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
+    step "Config git"
+    configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
 
     step "Setup: SSH key"
     setup_ssh_key
