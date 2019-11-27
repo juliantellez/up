@@ -51,8 +51,8 @@ steps(){
     install_syntax_highlight
     install_autocomplete
 
-    # step "Config git"
-    # configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
+    step "Config git"
+    configure_git $(pwd)/config/.gitconfig $(pwd)/config/.gitignore_global
 
     # step "Setup: SSH key"
     # setup_ssh_key
@@ -60,16 +60,16 @@ steps(){
     # step "Config: Create Iterm2 configuration"
     # create_iterm2_configuration $(pwd)/config/iterm.json
 
-    # step "Config: Fetch iterm2 color presets"
-    # fetch_iterm2_color_preset Ciapre.itermcolors
-    # fetch_iterm2_color_preset FrontEndDelight.itermcolors
-    # fetch_iterm2_color_preset BirdsOfParadise.itermcolors
+    step "Config: Fetch iterm2 color presets"
+    fetch_iterm2_color_preset Ciapre.itermcolors
+    fetch_iterm2_color_preset FrontEndDelight.itermcolors
+    fetch_iterm2_color_preset BirdsOfParadise.itermcolors
 
-    # step "Config: Copy zshrc"
-    # copy_zsh_configuration $(pwd)/config/.zshrc
+    step "Config: Copy zshrc"
+    copy_zsh_configuration $(pwd)/config/.zshrc
 
-    # step "Config: mac"
-    # configure_mac
+    step "Config: mac"
+    configure_mac
 }
 
 main() {

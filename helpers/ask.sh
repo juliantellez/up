@@ -6,6 +6,11 @@ ask() {
     # https://djm.me/ask
     local prompt default reply
 
+    # Override for development
+    if [ "${UP_ENV}" = "development" ]; then
+        return 0;
+    fi
+
     while true; do
 
         if [ "${2:-}" = "Y" ]; then

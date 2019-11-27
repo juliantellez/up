@@ -17,5 +17,6 @@ jobs:
         run: |
           defaults write -g AppleLanguages '("en-GB")';
           export TERM=xterm-256color;
+          export UP_ENV="development";
           . $(pwd)/main.sh;
           steps
