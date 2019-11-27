@@ -1,19 +1,13 @@
 on: push
 jobs:
   test:
-    name: Test UP installation
+    name: Test UP config
     runs-on:  macos-latest # macOS Catalina 10.15
     steps:
       - name: Virtual env info
         run: |
           system_profiler SPSoftwareDataType
-      - name: Create workspace
-        run: |
-          mkdir -p ~/.up; cd ~/.up;
-      - name: Fetch Commit
-        run: |
-          curl -L "https://github.com/juliantellez/up/tarball/${GITHUB_SHA}" | tar -xzv --strip-components 1 &> /dev/null;
-      - name: Run steps
+      - name: Install and Run UP
         run: |
           # Setup Test env
           defaults write -g AppleLanguages '("en-GB")';
@@ -22,6 +16,5 @@ jobs:
           export GIT_USERNAME="foo"
           export GIT_EMAIL="foo@baz.gizmo"
 
-          # Run Steps
-          . $(pwd)/main.sh;
-          steps;
+          # Install
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/${GITHUB_SHA}/install.sh)"
