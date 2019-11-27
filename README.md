@@ -87,6 +87,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 
 # Browsers
 - [firefox](https://www.mozilla.org/en-US/firefox/): Free and open-source web browser developed by the Mozilla Foundation.
+- [google-chrome](https://www.google.com/chrome/): A cross-platform web browser developed by Google.
 - [google-chrome-canary](https://www.google.com/chrome/canary/): Nightly build for developers.
 
 # Editors
