@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. $(pwd)/helpers/ask.sh
 . $(pwd)/helpers/create_backup.sh
 . $(pwd)/helpers/print.sh
 
