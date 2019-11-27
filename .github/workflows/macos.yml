@@ -17,4 +17,4 @@ jobs:
           export GIT_EMAIL="foo@baz.gizmo"
 
           # Install
-          sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/${GITHUB_SHA}/install.sh)"
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/${GITHUB_SHA}/install.sh) $GITHUB_SHA"
