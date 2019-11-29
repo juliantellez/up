@@ -6,6 +6,7 @@ firefox
 font-fira-code
 font-hack-nerd-font
 gitter
+google-chrome
 homebrew/cask-versions/google-chrome-canary
 iterm2
 ngrok
