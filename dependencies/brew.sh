@@ -52,7 +52,7 @@ tap_cask() {
 }
 
 install_brew_packages(){
-    # Makes sure brew is up to date
+    # Update the brew “registry”, and install the latest versions.
     brew update >/dev/null
 
     if [ -e $2 ]; then
