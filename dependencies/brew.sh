@@ -52,6 +52,9 @@ tap_cask() {
 }
 
 install_brew_packages(){
+    # Makes sure brew is up to date
+    brew update >/dev/null
+
     if [ -e $2 ]; then
         for package in $(<$2); do
             print_info "Installing ${package}"
