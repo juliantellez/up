@@ -47,7 +47,7 @@ complete -C $(which aws_completer) aws # tab compleition
 # Autocompletion is defined in ~/.oh-my-zsh/completions/_aws-user
 #
 function aws-users() {
-    cat ~/.aws/credentials | grep '\[' | grep -v '#' | tr -d '[' | tr -d ']'
+    grep '\[' ~/.aws/credentials | grep -v '#' | tr -d '[' | tr -d ']'
 };
 
 function aws-user () {
