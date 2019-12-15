@@ -1,4 +1,4 @@
-name: Greetings
+name: Check First Contribution
 
 on: [pull_request, issues]
 

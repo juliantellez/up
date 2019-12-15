@@ -1,4 +1,7 @@
+name: Test OSX
+
 on: push
+
 jobs:
   test:
     name: Test UP config
