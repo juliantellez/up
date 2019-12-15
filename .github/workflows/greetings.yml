@@ -1,0 +1,25 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          # Thanks for your contribution!
+          
+          Every contribution is appreciated and welcome.  🚀
+          
+          - Please refer to the [contribution](https://github.com/juliantellez/up/blob/master/CONTRIBUTING.md) readme for more info.
+
+        pr-message: |
+          # Thanks for your contribution!
+
+          Every contribution is appreciated and welcome.  🚀
+
+          - If you're planning to implement a new feature or add a new dependency please consider [creating an issue on GitHub](https://github.com/juliantellez/up/issues/new).
+          - If you have added a new dependency please include it in the README.
