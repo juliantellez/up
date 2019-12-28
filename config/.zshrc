@@ -66,3 +66,9 @@ function aws-user () {
         aws configure list
     fi
 }
+
+#
+# Kubernetes
+#
+##################
+source <(kubectl completion zsh) # tab compleition
