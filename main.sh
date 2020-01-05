@@ -73,14 +73,5 @@ steps(){
 }
 
 main() {
-    function teardown {
-        kill -TERM $STEPS_PID &> /dev/null
-    }
-
-    trap teardown SIGTERM EXIT
-
-    time steps &
-
-    STEPS_PID=$!
-    spinner $STEPS_PID
+    time steps
 }
