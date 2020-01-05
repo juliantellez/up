@@ -7,6 +7,7 @@ wget
 jq
 htop
 hub
+kubectl
 kops
 mas
 postgresql

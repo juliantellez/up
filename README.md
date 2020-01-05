@@ -78,7 +78,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 # cli/Binaries
 - [awscli](https://github.com/aws/aws-cli): Unified command line interface to Amazon Web Services.
 - [docker](https://github.com/docker/cli): Package Software into Standardized Units for Development, Shipment and Deployment.
-- [kops](https://github.com/kubernetes/kops): The easiest way to get a production grade Kubernetes cluster up and running.
+- [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/): cli for running commands against a kubernetes cluster.
+- [kops](https://github.com/kubernetes/kops): The easiest way to get a production grade Kubernetes cluster up and running in AWS.
 - [mas](https://github.com/mas-cli/mas): CLI for the Mac App Store.
 - [terraform](https://github.com/hashicorp/terraform): Tool for building, changing, and versioning infrastructure safely and efficiently.
 - [vault](https://github.com/hashicorp/vault): tTol for securely accessing secrets.
