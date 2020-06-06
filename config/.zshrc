@@ -9,6 +9,7 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version background_jobs history)
+DISABLE_MAGIC_FUNCTIONS=true
 
 plugins=(
     git
@@ -20,16 +21,54 @@ plugins=(
     zsh-completions
 )
 
-# reloading compleition
-autoload -U compinit && compinit
+# Reloading compleition #
+# see: https://gist.github.com/ctechols/ca1035271ad134841284#gistcomment-2308206
+###################
 
+autoload -Uz compinit
+
+for dump in ~/.zcompdump(N.mh+24); do
+    compinit
+done
+
+compinit -C
+
+
+# OHMY-ZSH #
+###################
 source $ZSH/oh-my-zsh.sh
 
 # NVM #
+# See: https://gist.github.com/fl0w/07ce79bd44788f647deab307c94d6922
 ###################
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+lazynvm() {
+    unset -f nvm node npm npx
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+    if [ -f "$NVM_DIR/bash_completion" ]; then
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+    fi
+}
+
+nvm() {
+    lazynvm
+    nvm $@
+}
+
+node() {
+    lazynvm
+    node $@
+}
+
+npm() {
+    lazynvm
+    npm $@
+}
+
+npx() {
+    lazynvm
+    npx $@
+}
 
 # AVN #
 ###################
