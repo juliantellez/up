@@ -93,7 +93,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 
 # Editors
 - [visual-studio-code](https://code.visualstudio.com/): Code editor redefined and optimized for building and debugging modern web and cloud applications. 
-- [vim](https://github.com/vim/vim): Improved version of the good old UNIX editor Vi.
+- [neoVim](https://github.com/neovim/neovim): Vim-fork focused on extensibility and usability.
 
 # Databases
 - [postgress](https://www.postgresql.org/): reliable and robust object-relational database.
@@ -155,6 +155,17 @@ follow the description below and import them from the color_presets folder.
 
 ```
 Iterm2 > Preferences > Profiles > Colors > Color Presets > Import
+```
+
+# NeoVim
+
+Neovim plugins are powered by [vim Plug](https://github.com/junegunn/vim-plug).
+
+```
+$ nvim
+
+:PlugStatus
+:PlugInstall
 ```
 
 # Acknowledgements

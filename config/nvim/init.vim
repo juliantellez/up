@@ -42,7 +42,7 @@ call plug#end()
 syntax enable
 colorscheme darcula
 
-
+let g:auto_save = 1             "enable AutoSave on startup
 set laststatus=2                "see the current mode, file name, file status, ruler, etc...2
 
 set number                      "Show line numbers
