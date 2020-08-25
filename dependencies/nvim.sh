@@ -28,4 +28,3 @@ copy_vim_plug_configuration () {
     fi
 }
 
-copy_vim_plug_configuration /Users/juliantellez/github/juliantellez/up/config/nvim/init.vim

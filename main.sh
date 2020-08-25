@@ -71,7 +71,7 @@ steps(){
 
     step "Config: nvim"
     install_vim_plug
-    copy_nvim_configuration $(pwd)/config/nvim/init.vim
+    copy_vim_plug_configuration $(pwd)/config/nvim/init.vim
 
     step "Config: mac"
     configure_mac
