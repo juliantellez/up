@@ -10,11 +10,11 @@ hub
 kubectl
 kops
 mas
+neovim
 postgresql
 redis
 tree
 terraform
 the_silver_searcher
 vault
-vim
 z

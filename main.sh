@@ -6,6 +6,7 @@
 . $(pwd)/dependencies/mac.sh
 . $(pwd)/dependencies/iterm2.sh
 . $(pwd)/dependencies/nodejs.sh
+. $(pwd)/dependencies/nvim.sh
 . $(pwd)/dependencies/zsh/autocomplete.sh
 . $(pwd)/dependencies/zsh/powerlevel9k.sh
 . $(pwd)/dependencies/zsh/syntax_highlight.sh
@@ -67,6 +68,10 @@ steps(){
 
     step "Config: Copy zshrc"
     copy_zsh_configuration $(pwd)/config/.zshrc
+
+    step "Config: nvim"
+    install_vim_plug
+    copy_nvim_configuration $(pwd)/config/nvim/init.vim
 
     step "Config: mac"
     configure_mac
