@@ -1,1 +1,1 @@
-UP_VERSION="0.2.0"
+UP_VERSION="0.2.1"
