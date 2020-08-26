@@ -35,6 +35,14 @@ Plug 'ctrlpvim/ctrlp.vim'
 " https://github.com/blueshirts/darcula
 Plug 'blueshirts/darcula'
 
+" Automatically save changes to disk in Vim
+" https://github.com/907th/vim-auto-save
+Plug '907th/vim-auto-save'
+
+" Go development plugin for Vim
+" https://github.com/fatih/vim-go
+Plug 'fatih/vim-go'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -62,5 +70,7 @@ set smartcase                   "use case if any caps used
 set incsearch                   "show match as search proceeds
 set hlsearch                    "search highlighting
 
-autocmd VimEnter * NERDTree                     "open NERDTree automatically
-let g:NERDTreeIgnore = ['^node_modules$']
+"-----NERDTree----
+let g:NERDTreeWinPos = "left"							"display on the left
+let NERDTreeShowHidden=1							"show dotfiles
+let g:NERDTreeIgnore = ['^node_modules$']					"ignore folder
