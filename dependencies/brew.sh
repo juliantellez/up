@@ -32,7 +32,7 @@ install_brew() {
 }
 
 install_cask() {
-    if [[ ! $(brew casks | grep $1) ]]; then
+    if [[ ! $(brew list --cask | grep $1) ]]; then
         print_info "Installing $1"
         brew install --cask $1 --appdir=/Applications >/dev/null
         print_success "${bold} ✓ installed. $1 ${normal}"
@@ -42,7 +42,7 @@ install_cask() {
 }
 
 tap_cask() {
-    if [[ ! $(brew casks| grep $1) ]]; then
+    if [[ ! $(brew list --cask| grep $1) ]]; then
         print_info "Tapping cask $1"
         brew tap $1 >/dev/null
         print_success "${bold} ✓ tapped. ${normal}"
@@ -67,6 +67,6 @@ install_brew_packages(){
         done
 
     else
-        print_error "Pagackes file not found"
+        print_error "Pacage file not found"
     fi
 }
