@@ -1,11 +1,9 @@
 caffeine
 canary
-day-o
 docker
 firefox
 font-fira-code
 font-hack-nerd-font
-gitter
 google-chrome
 homebrew/cask-versions/google-chrome-canary
 iterm2
@@ -15,4 +13,4 @@ spectacle
 spotify
 trailer
 vagrant
-visual-studio-code
+visual-studio

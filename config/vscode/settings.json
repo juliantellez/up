@@ -1,0 +1,58 @@
+{
+    "editor.tabCompletion": "on",
+    "editor.detectIndentation": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "editor.cursorBlinking": "phase",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.snippetSuggestions": "top",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14,
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "explorer.openEditors.visible": 0,
+    // Search
+    "search.exclude": {
+        "**/dist": true,
+        "**/bundle": true,
+        "**/public": true,
+        "**/build": true,
+        "**/node_modules": true
+    },
+    // render endofline
+    "editor.renderControlCharacters": false,
+    // HTML
+    "html.format.wrapLineLength": 80,
+    // STYLE LINT
+    "css.validate": true,
+    "scss.validate": false,
+    //SCSS
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.importStatement": "warning",
+    "scss.lint.boxModel": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "scss.lint.unknownVendorSpecificProperties": "warning",
+    "scss.lint.important": "warning",
+    "scss.lint.float": "warning",
+    "scss.lint.idSelector": "warning",
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorTheme": "Monokai",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "markdown.preview.breaks": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    // TERMINAL
+    "terminal.integrated.fontFamily": "'Hack Nerd Font', 'Fira Code'",
+    "typescript.suggest.completeFunctionCalls": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "editor.suggestSelection": "first",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // CSPELL
+    "cSpell.language": "en,en-GB",
+}
