@@ -87,9 +87,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 - [vagrant](https://www.vagrantup.com/): Development Environments Made Easy.
 
 # Browsers
-- [firefox](https://www.mozilla.org/en-US/firefox/): Free and open-source web browser developed by the Mozilla Foundation.
 - [google-chrome](https://www.google.com/chrome/): A cross-platform web browser developed by Google.
-- [google-chrome-canary](https://www.google.com/chrome/canary/): Nightly build for developers.
 
 # Editors
 - [visual-studio-code](https://code.visualstudio.com/): Code editor redefined and optimized for building and debugging modern web and cloud applications. 
@@ -101,16 +99,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/juliantellez/up/master/ins
 
 # Productivity
 - [caffeine](http://lightheadsw.com/caffeine/):  Click it to prevent your Mac from automatically going to sleep.
-- [spectacle](https://www.spectacleapp.com/): Move and resize windows with ease.
-- [trailer](https://ptsochantaris.github.io/trailer/): Track pull requests and issues across repositories.
-- [day-o](https://shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock): Menu bar clock replacement with a simple calendar for your Mac.
 
 # Apps
 - [gitter](https://gitter.im/): A chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
 - [slack](https://slack.com/): Brings all your communication together.
 - [giphy capture](https://giphy.com/apps/giphycapture): The best way to create GIFs on your Mac.
-- [canary](https://canarymail.io/): Modern email apps compromise on security or features. Canary does not.
-- [spotify](https://www.spotify.com): Music for everyone.
 
 # Configuration files
 

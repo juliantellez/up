@@ -1,16 +1,8 @@
 caffeine
-canary
 docker
-firefox
 font-fira-code
 font-hack-nerd-font
 google-chrome
-homebrew/cask-versions/google-chrome-canary
 iterm2
-ngrok
 slack
-spectacle
-spotify
-trailer
 vagrant
-visual-studio

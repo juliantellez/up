@@ -1,14 +1,22 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-. `brew --prefix`/etc/profile.d/z.sh
+BREW_PREFIX=$(brew --prefix)
+. "${BREW_PREFIX}/etc/profile.d/z.sh"
 
 export ZSH=$HOME/.oh-my-zsh
 
-POWERLEVEL9K_MODE="nerdfont-complete"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version background_jobs history)
+POWERLEVEL10K_MODE="nerdfont-complete"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
+POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version background_jobs history)
 DISABLE_MAGIC_FUNCTIONS=true
 
 plugins=(
